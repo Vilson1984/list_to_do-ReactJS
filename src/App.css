@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.App{
+ background-color: rgb(31, 29, 29);    
+ width: 40%;
+ border-radius: 5px;
+ color: #fff;
+ margin: 2em auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.to_do-header{
+padding: 0.2em;
+border-bottom: 1px solid #2C3035;
+text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.to_do-header h1{
+    margin: 0
+    ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-to_do{
+padding: 1em;
+margin: 0 2em;
+border-bottom: 1px solid #2C3035;
 }
 
-.App-link {
-  color: #61dafb;
+.list-to_do h2,
+.form-to_do h2{
+text-align: center;
+margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label{
+    font-weight: bold;
+    font-size: .7em;
+    margin-bottom: .4em;
+}
+
+.form-control input{
+    border: 1px solid #222;
+    border-radius: 2px;
+    background-color: #2C3035;
+    padding: .5em;
+    color: #dfdfdf;
+}
+
+input[type="submit"]{
+    background-color: #222;
+    border: 1px
+     #2C3035;
+    border-radius: .4em;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #eee;
+    font-size: 20px bold;
+    cursor: pointer;
 }
