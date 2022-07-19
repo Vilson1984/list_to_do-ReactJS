@@ -1,6 +1,6 @@
 import './App.css';
 import {useState, useEffect} from 'react';
-import {BsTrash, BsBookmarkCheck, BsBookmarkCheckFill, BsFillPatchCheckFill} from "react-icons/bs";
+import {BsTrash, BsBookmarkCheck, BsBookmarkCheckFill, BsFillPatchCheckFill, BsBookmarkFill} from "react-icons/bs";
 
 const API = "http://localhost:5000";
 
@@ -52,6 +52,37 @@ function App() {
 
     setTitle(""); // quando envia, limpa o formulário
     setTime("");
+  }
+
+  const handleDone = async (todo) => {
+    todo.done = !todo.done;
+
+    const data = await fetch(API + "/todos/" + todo.id, {
+      method: "PUT",
+      body: JSON.stringify(todo),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    
+    setTodos((prevState) =>
+      prevState.map((t) => (t.id === data.id ? (t = data) : t))
+    );
+  };
+
+  const handleDelete = async (id) => {
+
+    await fetch (API + "/todos/" + id, {
+      method:"DELETE",
+    })
+
+    setTodos((prevState) => prevState.filter((todo) =>todo.id !== id));
+  }
+
+  if (loading) {
+    return <center>
+      <p>...Loading</p>
+      </center>
   }
 
   return ( 
@@ -110,8 +141,14 @@ function App() {
         {todos.length === 0 && <p>Não há tarefas pendentes!</p>} 
         {todos.map((todos) =>(
           <div className='todo' key={todos.id}>
-            {todos.title}
-
+            <h3 className={todos.done ? "todo-done" : ""}>{todos.title}</h3>
+            <p>Duração: {todos.time} horas</p>
+            <div className='actions'>
+            <span onClick={() => handleDone(todos)}>
+              {!todos.done ? <BsBookmarkCheck/> : <BsBookmarkFill/> }
+            </span>
+            <BsTrash onClick={() =>handleDelete(todos.id)}/>
+            </div>
           </div>
         ))}
       </div>
