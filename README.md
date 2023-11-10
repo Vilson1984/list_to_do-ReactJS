@@ -8,12 +8,12 @@ Um aplicativo simples de lista de tarefas construído em React, permitindo que o
     Marcação de Conclusão: Marque as tarefas como concluídas quando finalizadas.
     Exclusão de Tarefas: Remova as tarefas que não são mais necessárias.
 
-Acesso
+:accessibility: Acesso
 
     Inicie o aplicativo: npm start
     Cole em seu navegador o link: "https://Vilson1984.github.io/list_to_do-ReactJS"
 
-Instalação
+💻 Instalação
 
     Clone o repositório: git clone https://github.com/seu-usuario/lista-de-tarefas.git
     Navegue até o diretório: cd lista-de-tarefas
