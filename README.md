@@ -1,4 +1,4 @@
-📋 Lista de Tarefas
+# 📋  Lista de Tarefas
 Descrição
 
 Um aplicativo simples de lista de tarefas construído em React, permitindo que os usuários organizem suas tarefas diárias de maneira eficiente.
