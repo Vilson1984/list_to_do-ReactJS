@@ -1,3 +1,56 @@
+📋 Lista de Tarefas
+Descrição
+
+Um aplicativo simples de lista de tarefas construído em React, permitindo que os usuários organizem suas tarefas diárias de maneira eficiente.
+🚀 Funcionalidades Principais
+
+    Adição de Tarefas: Adicione suas tarefas diárias com facilidade.
+    Marcação de Conclusão: Marque as tarefas como concluídas quando finalizadas.
+    Exclusão de Tarefas: Remova as tarefas que não são mais necessárias.
+
+Acesso
+
+    Inicie o aplicativo: npm start
+    Cole em seu navegador o link: "https://Vilson1984.github.io/list_to_do-ReactJS"
+
+Instalação
+
+    Clone o repositório: git clone https://github.com/seu-usuario/lista-de-tarefas.git
+    Navegue até o diretório: cd lista-de-tarefas
+    Instale as dependências: npm install
+
+Uso
+
+    Inicie o aplicativo: npm start
+    Abra o navegador e acesse http://localhost:3000
+
+🛠️ Tecnologias Utilizadas
+
+    React
+    react-icons
+
+👥 Contribuição
+
+Sinta-se à vontade para contribuir! Reporte problemas, proponha melhorias ou envie pull requests.
+Como Contribuir
+
+    Fork o projeto
+    Crie sua branch de recurso (git checkout -b feature/sua-feature)
+    Faça commit das suas alterações (git commit -am 'Adiciona nova funcionalidade')
+    Faça push para a branch (git push origin feature/sua-feature)
+    Abra um Pull Request
+
+
+🚧 Pendências
+
+Botão de tarefa concluída.
+
+    Está pendente a funcionalidade do botão de tarefa concluída.
+<br>
+<br>
+<br>
+<br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
