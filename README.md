@@ -10,7 +10,6 @@ Um aplicativo simples de lista de tarefas construído em React, permitindo que o
 
 :accessibility: Acesso
 
-    Inicie o aplicativo: npm start
     Cole em seu navegador o link: "https://Vilson1984.github.io/list_to_do-ReactJS"
 
 💻 Instalação
